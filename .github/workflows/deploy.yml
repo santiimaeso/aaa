@@ -21,7 +21,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-region: eu-west-1
+          aws-region: us-east-1
           role-to-assume: arn:aws:iam::160342630676:role/sts-lab-2-target
  
       - run: aws sts get-caller-identity
